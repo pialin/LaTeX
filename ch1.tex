@@ -1,0 +1,24 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage{prettyref}
+\newrefformat{ch}{Chapter~\ref{#1}}
+\author{J.\,R Smith \and J.\,J. Redick\thanks{3pt!!!}}
+\title{\LaTeX and Friends}
+\date{\today}
+\begin{document}
+\maketitle
+	\begin{abstract}
+	AAAA
+	\end{abstract}
+\tableofcontents
+\section{1}
+    %aaa
+ABCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC\label{ch:section1}
+$f(x)$ is (1)~continuous; (2)~bounded.
+\section{2}
+DEF\prettyref{ch:section1}
+
+\appendix
+\section{Proof of Main Theorem}
+\subsection{A useful lemma}
+
+\end{document}
